@@ -17,8 +17,10 @@
   <div class="poster-carousel">
       <button class="nav prev">&#10094;</button>
       <div class="poster-images">
+        <!-- 2 poster đầu tiên -->
         <img src="515693241_706599362209079_8427048720154927444_n.jpg" alt="Poster 1">
         <img src="515166749_2508147226195559_4065020964811382077_n.jpg" alt="Poster 2">
+        <!-- 3 ảnh tiếp theo -->
         <img src="IMG_8022.jpg" alt="Poster 3">
         <img src="IMG_8023.jpg" alt="Poster 4">
         <img src="IMG_8024.jpg" alt="Poster 5">
@@ -45,7 +47,7 @@
     const prevBtn = document.querySelector('.prev');
     const nextBtn = document.querySelector('.next');
     const carousel = document.querySelector('.poster-images');
-    const scrollAmount = 220; // mỗi lần click cuộn một ảnh
+    const scrollAmount = 220; // width (200) + gap (20)
 
     prevBtn.addEventListener('click', () => {
       carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
